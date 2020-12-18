@@ -1,0 +1,229 @@
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Rubik', sans-serif;
+    ;
+}
+img{
+    max-width: 100%;
+}
+.grybg{
+    background-color: #f9fafb;
+}
+/* buttom */
+body a.btn.btn-primary.btn-lg {
+    background-color:#e73c3e !important;
+    border-color: #e73c3e;
+    padding: 10px 30px;
+    font-size: 16PX;
+    position: relative;
+    z-index: 1;
+}
+body a.btn.btn-primary.btn-lg::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #111;
+    border-color: #111;
+    z-index: -1;
+    transition: .4s;
+}
+
+ body a.btn.btn-primary.btn-lg:hover::after{
+    width: 100%;
+}
+body a.btn.btn-primary.btn-lg:hover{
+    border-color:#111;
+}
+/* header */
+.main-header .container-fluid,.slider-section .container-fluid{
+    max-width: 1440px;
+}
+/* header css */
+ul.our-menu{}
+ul.our-menu li{}
+ul.our-menu li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #111;
+    font-weight: 500;
+}
+ul.our-menu li a:hover{}
+/*  */
+.header-call-info {
+    width: 220px;
+}
+
+i.fas.fa-search {
+    font-size: 25px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    margin-right: 21px;
+    width: 60px;
+    line-height: 51px;
+}
+i.fas.fa-phone-volume {
+    font-size: 33px;
+    line-height: 50px;
+    color: #fc0b0b;
+}
+a.d-block {
+    color: #111;
+    font-weight: 600;
+    font-size: 18px;
+}
+/* dropdown menu */
+ul.our-menu{}
+ul.our-menu li{
+    position: relative;
+}
+ul.our-menu li ul{
+    position: absolute;
+    width: 300px;
+    left: 0;
+    top: 155%;
+    background: #fafafa;
+    list-style: none;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    transition: all .4s ease-in-out;
+} 
+ul.our-menu li ul li{
+    flex-direction: column;
+}
+ul.our-menu li:hover ul{
+    opacity: 1;
+    visibility: visible ;
+    top: 100%;
+}
+ul.our-menu li ul li a{}
+/* banner */
+.slider-section{
+    background:url(img/main-banner2.jpg) no-repeat top center;
+    background-size: cover;
+}
+.slider-wrap{
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-social{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+ 
+}
+.slider-content h6{
+    color: #e73c3e;
+}
+.slider-content h1{
+    font-size: 60px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.slider-content p{
+     font-weight: 400;
+     color: #606060;
+     font-size: 18px;
+
+}
+.header-social ul{
+    list-style: none;
+    padding-left: 0;
+}
+.header-social ul li{}
+.header-social ul li span{
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 50px;
+    position: relative;
+}
+.header-social ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding:0px 14px ;
+    font-size: 18px;
+    color: #111;
+}
+.header-social ul li span::after{
+    content: "";
+    height: 1px;
+    background: #111;
+    width: 37px;
+    position: absolute;
+    right: -45px;
+    top: 50%;
+}
+/* client logo css */
+.client-logo ul{
+    list-style: none;
+    padding: o;
+}
+.logo-section{
+    border-bottom: 1px solid #ddd;
+}
+/* abou-section */
+.about-image{
+    position: relative;
+}
+.about-image-text{
+    position: absolute;
+    right: 105px;
+    bottom: 7px;
+    background: url(img/shape.png) no-repeat center center;
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.about-text-innar {
+    text-align: center;
+}
+.about-text{}
+.finix-text h6{
+    color: #e;
+    color: #e63b3d;
+    font-weight: 400;
+}
+.finix-text h2{
+    font-size: 39px;
+    font-weight: 400;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+.finix-text p{
+    color: #606060;
+    font-size: 18px;
+}
+.finix-text strong{
+    color: #606060;
+    font-size: 18px;
+    font-weight: 400;
+}
+.finix-text ul{
+    list-style: none;
+    padding: opx;
+}
+.finix-text ul li{
+    padding: 5px 0;
+}
+.finix-text ul li::before{
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    color: #e73c3e;
+    display: inline-block;
+    margin-right: 12px;
+}
+
